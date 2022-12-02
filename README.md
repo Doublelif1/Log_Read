@@ -30,7 +30,7 @@
 ## 5.	为了方便修改etcd的key-value
         我编写了极简的（后期有时间会对前端进行优化）基于Gin框架的客户端,来方便对etcd上的key-value数据进行增删改查:
    <div align="center">
-  <img src="https://github.com/Doublelif1/Log_Read/blob/master/readme_photo/gin_web.png">
+  <img src="https://github.com/Doublelif1/Log_Read/blob/master/readme_photo/web.png">
   </div>
   
         运行步骤:
