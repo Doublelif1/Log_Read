@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>etcd</title>
+</head>
+<body>
+
+
+<form action="http://127.0.0.1:3000/logagent_etcdctl" method="post" enctype="application/x-www-form-urlencoded">
+  <h1>对Log_agent中etcd配置的操作:</h1>
+  <h3>选择操作:</h3>
+  <input type="radio" value="change" name="chose">新增
+  <input type="radio" value="del" name="chose">删除
+  <input type="radio" value="get" name="chose">查询
+  <input type="radio" value="change" name="chose">修改
+
+    <br>
+
+  <h2>需要操作的etcd key:</h2>
+    <input type="text" name="etcdkey" style="width:900px; height:20px;">
+    <br>
+  <h2>需要操作的etcd value(新增或修改操作填写):</h2>
+    <h4>Log_agent etcd value为json格式 例:</h4>
+    [{"path":"D:/testlog/redis.log","topic":"testlog_agent_log"}]
+    <br>
+    [{"path":"D:/testlog/redis.log","topic":"testlog_agent_log"},{"path":"D:/testlog/mysql.log","topic":"test_topic"}]
+    <br>
+  <h4>Log_transfer etcd value为json格式 例:</h4>
+  [{"topic":"testlog_agent_log"}]
+  <br>
+  [{"topic":"testlog_agent_log"},{"topic":"test_topic"}]
+  <br>
+    <br>
+    请输入: <input type="text" name="etcdvalue"style="width:900px; height:20px;">
+    <br>
+    <input type="submit" value="提交">
+
+</form>
+
+
+
+
+</body>
+</html>
